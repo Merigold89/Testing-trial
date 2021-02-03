@@ -1,6 +1,6 @@
 def add(a, b):
     """ Addition """
-    return a + b
+    return a + b # przy zamianie na "+" na "-" pojawią się błędy w test_calculator.py
 
 
 def multiply(a, b):
