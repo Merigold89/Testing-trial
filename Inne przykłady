@@ -1,0 +1,63 @@
+import unittest                                                      # False lub True, czy liczba jest parzysta                                 
+
+
+class TestIsEven(unittest.TestCase):
+
+    def test_when_output_true(self):
+        self.assertTrue(int() % 2 == 0)
+
+    def test_when_output_false(self):
+        self.assertFalse(int() % 2 != 0)
+
+
+if __name__ == '__main__':
+    unittest.main()
+    
+    
+import unittest                                                      # Czy dana wejściowa to ciąg znaków (string)   
+
+
+class TestStringToLower(unittest.TestCase):
+    def test_string_to_lower(self):
+        # testing for an exception one way
+        self.assertRaises(ValueError, string_to_lower )
+
+        # testing for an exception another way
+        with self.assertRaises(ValueError):
+            
+
+if __name__ == '__main__':
+    unittest.main()
+    
+    
+import unittest                                                         # Sprawdza czy 'luck' występuję w danym elemencie listy
+
+
+class TestFindLuck(unittest.TestCase):
+
+    def test_strings_with_luck(self):
+        # checks that find_luck finds 'luck' in all of the strings with 'luck'
+        strings_with_luck = [
+            'luck',
+            'hereluckthere',
+            'hereluck',
+            'luckhere',
+            'luck is great but most of life is hard work'
+        ]
+
+        # write your test here
+        for s in strings_with_luck:
+            self.assertIsNotNone(s)
+            
+    def test_strings_without_luck(self):
+        # checks that find_luck finds 'luck' in all of the strings with 'luck'
+        strings_without_luck = ['here', 'duck', 'four', 'uckl']
+
+        # write your test here
+        for s in strings_without_luck:
+            self.assertIsNotNone(s)
+
+if __name__ == '__main__':
+    unittest.main() 
+    
+  
