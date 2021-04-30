@@ -6,7 +6,7 @@ class Calculator:
 
     def add(self):
         """ Addition """
-        return self.first + self.second # przy zamianie na "+" na "-" pojawią się błędy w test_calculator.py
+        return self.first + self.second  # przy zamianie na "+" na "-" pojawią się błędy w test_calculator.py
 
 
     def multiply(self):
@@ -22,5 +22,8 @@ class Calculator:
     def divide(self):
         """ Division """
         if self.second == 0:
-            raise ValueError('Can not divide by zero!')
+            pass
+            #return ZeroDivisionError
         return self.first / self.second
+
+
